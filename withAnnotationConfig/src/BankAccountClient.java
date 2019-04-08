@@ -24,8 +24,8 @@ public class BankAccountClient {
 		long fromAccount;
 		long toAccount;
 
-		ApplicationContext context=new ClassPathXmlApplicationContext("context.xml");
-		BankAccountServiceImpl bankService=context.getBean(BankAccountServiceImpl.class);
+	ApplicationContext context=new ClassPathXmlApplicationContext("context.xml");
+	BankAccountServiceImpl bankService=context.getBean(BankAccountServiceImpl.class);
 
 		
 		try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
